@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'KOTRALEAP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRALEAP.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes login-animation {
+    0%   {color: rgba(240, 240, 240, 0);}
+    100% {color: rgba(240, 240, 240, 0.8);}
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    text-align: center;
+    color: rgba(240, 240, 240, 0.8);
+}
+
+h1 {
+    font: bold 7em 'GowunDodum-Regular';
+    margin: 0;
+    animation-name: login-animation;
+    animation-duration: 3s;
+}
+
+#todo_list {
+    margin: 0 auto;
+    width: 30%;
+    padding: 0;
+}
+
+#todo_list li {
+    list-style: none;
+    margin: 3px;
+}
+
+#todo_list li:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#todo_list li span {
+    display: block;
+    float: left;
+    font: 1em 'GowunDodum-Regular';
+    background-color: rgba(40, 40, 40, 0.4);
+    padding: 0 10px;
+}
+
+#todo_list li button {
+    float: right;
+}
+
+input[type=text] {
+    width: 30.5%;
+    text-align: center;
+    margin: 10px 0 20px 0;
+    background-color: rgba(240, 240, 240, 0.8);
+    color: rgb(49, 49, 49);
+    border-radius: 5px;
+    border: none;
+    font: 1em 'GowunDodum-Regular';
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 50%;
+}
+
+#login-form input[type=text] {
+    width: 25%;
+    margin: 10px 0 0 0;
+}
+
+#login-form input[type=text]:focus {
+    width: 45%;
+}
+
+input[type=submit] {
+    width: 5%;
+}
+
+button, input[type=submit] {
+    border-radius: 5px;
+    background-color: rgba(160, 160, 220, 0.8);
+    border: none;
+    color: white;
+    padding: 1px 10px;
+    margin: 0;
+    cursor: pointer;
+    font: 1em 'GowunDodum-Regular';
+}
+
+button:hover, input[type=submit]:hover {
+    background-color: rgba(200, 200, 255, 0.8);
+    color:rgb(40, 40, 40);
+}
+
+.bgImage {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0; top: 0;
+    margin: 0 auto;
+    z-index:-2;
+}
+
+#filter {
+    z-index:-1;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#clock {
+    margin: 10% auto 0;
+    font: bold 7em 'KOTRALEAP';
+}
+
+#quote {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#quote span {
+    display: block;
+    font: italic 0.9em 'GowunDodum-Regular';
+}
+
+#weather {
+    position: absolute; top: 3%; left: 3%;
+}
+
+#weather span:first-child {
+    display: block;
+    font: bold 2em 'GowunDodum-Regular';
+}
+
+#weather span:last-child {
+    font: 1em 'GowunDodum-Regular';
+}
